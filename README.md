@@ -20,7 +20,7 @@ Example message:
 
 1. Clone the repository: `git clone https://github.com/nTraum/gitlab-irc.git`
 2. Install required gems: `cd gitlab-irc; gem install bundler; bundle`
-2. Edit `config/config.yml` to your needs (e.g. IRC channel and server)
+2. Copy `config/config.yml.example` to `config/config.yml` and edit it to your needs (e.g. IRC channel and server)
 3. Start the app: `foreman start` in a tmux / screen shell
 4. Add a web hook pointing to the app: `http://localhost:4567/commit` (host / port may differ, depending on your configuration)
 

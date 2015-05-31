@@ -16,4 +16,5 @@ irc:
 web:
   bind: 'localhost'
   port: 4567
+  
 google_api_key: ''
