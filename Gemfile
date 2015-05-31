@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'cinch'
 gem 'foreman'
-gem 'googl'
+gem 'googl', '>= 0.7.1'
 gem 'multi_json'
 gem 'redis'
 gem 'sinatra'

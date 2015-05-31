@@ -1,6 +1,8 @@
 require 'multi_json'
 require 'googl'
 
+$config = YAML.load_file(File.join('config', 'config.yml'))
+
 class MessageFormatter
   def self.messages(json)
     msgs = []
@@ -16,6 +18,10 @@ class MessageFormatter
   end
 
   def self.short_url(url)
-    Googl.shorten(url).short_url
+	if($config['google_api_key'])
+    		Googl.shorten(url,nil, $config['google_api_key']).short_url
+	else
+		url
+	end
   end
 end
